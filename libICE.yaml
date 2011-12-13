@@ -1,6 +1,6 @@
 Name: libICE
 Summary: X.Org X11 libICE runtime library
-Version: 1.0.6
+Version: 1.0.7
 Release: 0
 Group: System/Libraries
 License: MIT/X11
@@ -12,10 +12,14 @@ PkgConfigBR:
     - xproto
     - xtrans
 Configure: configure
+Description: |
+  %{summary}.
 SubPackages:
     - Name: devel
       Summary: X.Org X11 libICE development package
       Group: System/Libraries
       Requires:
           - xorg-x11-filesystem
+      Description: |
+        %{summary}.
 
